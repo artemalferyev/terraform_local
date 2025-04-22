@@ -1,0 +1,17 @@
+# Ignore state files
+*.tfstate
+*.tfstate.backup
+
+# Ignore Terraform working directory
+.terraform/
+
+# Ignore auto-generated lock file
+.terraform.lock.hcl
+
+# Ignore any file created by resources
+hello.txt
+
+# Optional: OS / editor-specific
+.DS_Store
+.idea/
+.vscode/y

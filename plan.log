@@ -1,0 +1,46 @@
+[0m[1mlocal_file.example: Refreshing state... [id=42086c02e03bf671ddf621ed9922f52f2c7a605c][0m
+
+Terraform used the selected providers to generate the following execution
+plan. Resource actions are indicated with the following symbols:
+  [32m+[0m create[0m
+  [31m-[0m destroy[0m
+
+Terraform will perform the following actions:
+
+[1m  # local_file.example[0m will be [1m[31mdestroyed[0m
+  # (because local_file.example is not in configuration)
+[0m  [31m-[0m[0m resource "local_file" "example" {
+      [31m-[0m[0m content              = "Hello, Terraform!" [90m-> null[0m[0m
+      [31m-[0m[0m content_base64sha256 = "ncWp9Vop606qYn0aIPKuPMIkWRzvO4mgxV9N1jscpf0=" [90m-> null[0m[0m
+      [31m-[0m[0m content_base64sha512 = "PGmx7i5FR7nzPdG+RGISMuSUYKhuZDyPcbdZJm/HaGM81NLdWuoe3Uc5AALNtsDSIkdQWhjdnSYtfa64UdSk/w==" [90m-> null[0m[0m
+      [31m-[0m[0m content_md5          = "08a67bbe3ffb550ec09d244035d4dd49" [90m-> null[0m[0m
+      [31m-[0m[0m content_sha1         = "42086c02e03bf671ddf621ed9922f52f2c7a605c" [90m-> null[0m[0m
+      [31m-[0m[0m content_sha256       = "9dc5a9f55a29eb4eaa627d1a20f2ae3cc224591cef3b89a0c55f4dd63b1ca5fd" [90m-> null[0m[0m
+      [31m-[0m[0m content_sha512       = "3c69b1ee2e4547b9f33dd1be44621232e49460a86e643c8f71b759266fc768633cd4d2dd5aea1edd47390002cdb6c0d22247505a18dd9d262d7daeb851d4a4ff" [90m-> null[0m[0m
+      [31m-[0m[0m directory_permission = "0777" [90m-> null[0m[0m
+      [31m-[0m[0m file_permission      = "0777" [90m-> null[0m[0m
+      [31m-[0m[0m filename             = "./hello.txt" [90m-> null[0m[0m
+      [31m-[0m[0m id                   = "42086c02e03bf671ddf621ed9922f52f2c7a605c" [90m-> null[0m[0m
+    }
+
+[1m  # local_file.hello_file[0m will be created
+[0m  [32m+[0m[0m resource "local_file" "hello_file" {
+      [32m+[0m[0m content              = "Hello from Terraform!"
+      [32m+[0m[0m content_base64sha256 = (known after apply)
+      [32m+[0m[0m content_base64sha512 = (known after apply)
+      [32m+[0m[0m content_md5          = (known after apply)
+      [32m+[0m[0m content_sha1         = (known after apply)
+      [32m+[0m[0m content_sha256       = (known after apply)
+      [32m+[0m[0m content_sha512       = (known after apply)
+      [32m+[0m[0m directory_permission = "0777"
+      [32m+[0m[0m file_permission      = "0777"
+      [32m+[0m[0m filename             = "./hello.txt"
+      [32m+[0m[0m id                   = (known after apply)
+    }
+
+[1mPlan:[0m 1 to add, 0 to change, 1 to destroy.
+[0m[90m
+─────────────────────────────────────────────────────────────────────────────[0m
+
+Note: You didn't use the -out option to save this plan, so Terraform can't
+guarantee to take exactly these actions if you run "terraform apply" now.
